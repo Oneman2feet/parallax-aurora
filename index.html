@@ -26,28 +26,28 @@
         [data-depth="0"] {
             background: url(assets/test.svg) no-repeat bottom center;
             background-size: cover;
-            transform: translateZ(0) translateY(250vh);
+            transform: translateZ(0) translateY(180vh);
             z-index: 100;
         }
 
-        [data-depth="2"] {
+        [data-depth="1"] {
             background: url(assets/forest.svg) no-repeat bottom center;
             background-size: cover;
-            transform: translateZ(-2px) scale(3) translateY(80vh);
+            transform: translateZ(-1px) scale(2) translateY(80vh);
             z-index: 80;
         }
 
-        [data-depth="4"] {
+        [data-depth="2"] {
             background: url(assets/mountains.svg) no-repeat bottom center;
             background-size: cover;
-            transform: translateZ(-4px) scale(5) translateY(50vh);
+            transform: translateZ(-2px) scale(3) translateY(50vh);
             z-index: 60;
         }
 
-        [data-depth="6"] {
+        [data-depth="3"] {
             height: 300vh;
             background: black;
-            transform: translateZ(-6px) scale(7);
+            transform: translateZ(-3px) scale(4);
             z-index: 50;
         }
     </style>
@@ -55,9 +55,9 @@
 <body>
     <div class="parallax">
         <div class="layer" data-depth="0"></div>
+        <div class="layer" data-depth="1"></div>
         <div class="layer" data-depth="2"></div>
-        <div class="layer" data-depth="4"></div>
-        <div class="layer" data-depth="6"></div>
+        <div class="layer" data-depth="3"></div>
     </div>
 </body>
 </html>
